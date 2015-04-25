@@ -1,0 +1,2 @@
+git is cool
+You can set an upstream with -u
