@@ -1,3 +1,4 @@
+hidden files begin with a .
 s
 mv unix_notes.txt my_notes.txt
 c
