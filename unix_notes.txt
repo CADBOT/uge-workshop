@@ -1,0 +1,1689 @@
+s
+mv unix_notes.txt my_notes.txt
+c
+cat unix_notes.txt 
+cd uge_workshop/
+mv unix_notes.txt uge_workshop/
+touch unix_notes.txt
+cd ..
+mv moving_around.txt uge_workshop/unix_notes.txt
+mv moving_around.txt ..
+clear
+ls
+mv moving_around.txt  uge_workshop
+history > moving_around.txt
+pwd
+mkdir uge_workshop
+cd
+head -n 1 my-file 
+head my-file 
+history | head -n 3
+history | head
+cat my-file 
+echo 'and yet another thing' >> my-file 
+echo 'Now for something else' > my-file
+echo 'This is a file' > my-file
+echo "hello class"
+cd /tmp
+history ~/my-history
+history > my-history
+man less
+history 10
+history | less
+history
+ls .
+cd ~/code
+cd /var/mail/
+cd ~
+ls /home/charlie/
+ls ~
+cd tutorials/
+cd code
+cd ../..
+cd ../tutorials//../tutorials/../tutorials/
+cd code/tutorials/
+cd tutorials
+ls -l
+mkdir my-folder
+cd my\ folder
+cd my folder
+mkdir my\ folder
+man ls
+man man
+ls -lt
+ls -t
+touch file1
+touch file2
+cd example/
+mkdir example
+cd /tmp/
+cd /
+cd /var/log/installer/
+cd /home/charlie/code
+cd /etc
+cd code/
+git push origin fuck-shippable
+git commit -m 'nough said'
+git rm shippable.yml 
+git checkout -b fuck-shippable
+git pull
+git checkout master
+git branch
+cd nermal_api/
+cd renote
+cd re
+cat shippable.yml 
+cat docker-compose.yml 
+qc
+cat Gemfile
+cd 
+..
+less notes.txt
+xclip -o
+cat notes.txt | xclip
+xclip
+vi notes.txt
+aspell -c notes.txt 
+man aspell
+aspell notes.txt 
+ss
+cd meeting/
+mkdir meeting
+cd Documents/
+vi Gemfile
+git checkout -b dependency-cleanup
+git branch -d docker-compose-database
+git branch -d docker-compose-master
+git branch -d hacks
+git branch -d docker-compose
+cd liz_ui/
+docker ps
+ps
+docker images
+rm -rf temp/
+cd temp
+git push -u origin docker-compose
+git commit -m 'Can now run a api locally for the frontend
+
+Pulls the latest version of nermal_api from dockerhub, connects it to a fresh postgres container, and runs it
+locally. Added an npm script for easy setup.'
+git add package.json 
+git add docker-compose.yml 
+git status
+docker-compose up
+vi package.json 
+vi docker-compose.yml 
+docker rmi nermalapi_api
+docker nermalapi_api
+docker stop lizui_db_1
+docker imeages
+npm run setup-api
+cat package.json 
+docker-compose run api bundle exec rake db:migrate
+docker-compose run api bundle exec rake db:create
+git checkout -b docker-compose
+git stash
+cp nermal_api/docker-compose.yml liz_ui/
+cp nermal_api/Dockerfile liz_ui/
+rm -rf renote-frontend/
+.\s
+docker login
+docker pull cadbot/nermal_api
+docker logout
+docker rmi cadbot/nermal_api
+cd docker/
+mkdir docker
+cd tmp
+docker push cadbot/nermal_api
+docker build -t cadbot/nermal_api .
+git checkout docker-compose-database
+docker
+docker hub
+rails s
+docker-compose run api bundle exec rake 
+git push
+git commit -m 'remove hacks dir as it is no longer needed'
+git rm -r hacks
+git -rf hacks
+git merge hacks
+cat hacks
+git push origin hacks
+git commit -m 'run sed on the proper file this time. doh.'
+git add shippable.yml 
+vi shippable.yml 
+cat config/database.yml
+git commit -m 'Create database table for tests in shippable.yml'
+fg
+git commit -m 'Use sed to remove host line setting from database.yml'
+git checkout -b hacks
+git branch -D docker-compose-database-hacks
+cat hacks/database.yml 
+sed -i '/host/d' hacks/database.yml 
+cp config/database.yml hacks
+rm hacks/database.yml 
+mkdir hacks
+rm -r hacks
+rm hacks
+git clean -fd
+git clean -d
+git clean 0d
+man git-clean
+git clean
+git clean -F
+git clean -f
+man sed
+git add hacks
+vi database.yml 
+vi preface
+cd hacks/
+cp ../config .
+git checkout config
+rake 
+rm config/database.yml 
+rake
+C
+rake db:migrate RAILS_ENV=test
+rake test
+rake db:migrate
+rake db:create
+chruby ruby-2.1.3
+git clone https://github.com/sjdev/nermal_api.git
+mkdir temp
+git checkout -b docker-compose-database-hacks
+cd cod
+rm tmp/pids/server.pid 
+vi database.yml
+cd config/
+git commit -m 'Remove add_private_key stuff. It was not working with postgres
+
+All the tests passed without them, and they are not really an advised thing to do anyway'
+git add -u
+docker-compose run api rake 
+docker-compose run api rake test
+docker-compose api run rake test
+docker-compose run api rake db:migrate
+docker-compose run api rake db:create
+docker-compose run api rake db:drop
+vi migrate/20150306075046_add_college_class_to_note.rb
+vi migrate/20150221073347_create_email_domains.rb
+vi migrate/20150122203149_create_reviews.rb
+vi migrate/20150113071821_create_college_classes.rb
+grep foreign migrate/*
+grep foreign migrate
+grep migrate foreign
+vi 20150106213150_devise_create_users.rb
+cd db/migrate/
+vi db/migrate/20150113071821_create_college_classes.rb 
+git checkout db/migrate/
+rm 20150113071821_create_college_classes.rb
+docker-compose run api rake db:seed
+rake db:drop
+git push -u origin docker-compose-database
+git commit -m 'Migrate app to Postgresql. Add docker image for db'
+git add Gemfile Gemfile.lock config/database.yml docker-compose.yml 
+docker-compose run api rake db:destroy
+rake db
+vi config/database.yml 
+docker-compose run api rails c
+docker-compose run rails
+cd db
+vi database.ymlBK 
+mv database.yml database.ymlBK
+docker-compose run db
+docker-compose run
+docker-compose build
+docker-compose run api
+docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app ruby bundle install
+echo $PWD
+pwe
+docker-compose run api bundle
+docker-compose run web
+git checkout -b docker-compose-database
+sudo apt-get update
+git branch -d update-dockerfile
+docker-machine ls
+docker-machine lsc
+docker-machine active master
+docker-machine
+eval (docker-machine env  --swarm master)
+docker-machine env  --swarm master
+docker-machine env
+swarm m 6ad806f063cd69590debc02dda67d797
+swarm m
+swarm manage 6ad806f063cd69590debc02dda67d797
+docker-machine create -d digitalocean --digitalocean-access-token=d3eaf52dcef38ef2831fd8d9238d4df8e6723511cc4d261f43960b09c0c378db   --swarm \
+--swarm-discovery token://6ad806f063cd69590debc02dda67d797 slave
+swarm
+docker-machine create -d digitalocean --digitalocean-access-token=d3eaf52dcef38ef2831fd8d9238d4df8e6723511cc4d261f43960b09c0c378db  --swarm-master --swarm \
+--swarm-discovery token://6ad806f063cd69590debc02dda67d797 master
+docker-machine create -d digitalocean --digitalocean-access-token=d3eaf52dcef38ef2831fd8d9238d4df8e6723511cc4d261f43960b09c0c378db  --swarm-master swarm-master2
+docker-machine create -d digitalocean --digitalocean-access-token=d3eaf52dcef38ef2831fd8d9238d4df8e6723511cc4d261f43960b09c0c378db  swarm-master
+docker-machine create -d digitalocean --digitalocean-access-token=d3eaf52dcef38ef2831fd8d9238d4df8e6723511cc4d261f43960b09c0c378db --swarm --swarm-master --swarm-dicover=token://6ad806f063cd69590debc02dda67d797 swarm-master
+docker-machine create \
+-d digitalocean \
+-digitalocean-access-token=d3eaf52dcef38ef2831fd8d9238d4df8e6723511cc4d261f43960b09c0c378db \
+--swarm \
+--swarm-master \
+--swarm-dicover=token://6ad806f063cd69590debc02dda67d797 \
+swarm-master
+docker-machine create \
+-d digitalocean \
+--swarm \
+--swarm-master \
+--swarm-discovery=tpken://6ad806f063cd69590debc02dda67d797 \
+swarm-master
+docker-machine create \
+-d digitalocean \
+--swarm \
+--swarm-master \
+--swarm-dicover=token://6ad806f063cd69590debc02dda67d797 \
+swarm-master
+docker-machine create \
+-d digitalocean \
+--digitalocean-access-token=520ae6a1d4402b2f77d3c902b8ea13e0 \
+--swarm \
+--swarm-master \
+--swarm-dicover=token://6ad806f063cd69590debc02dda67d797 \
+swarm-master | less
+docker-machine create \
+-d digitalocean \
+--digitalocean-access-token=520ae6a1d4402b2f77d3c902b8ea13e0 \
+--swarm \
+--swarm-master \
+--swarm-dicover=token://6ad806f063cd69590debc02dda67d797 \
+swarm-master
+docker-machine kill
+docker-machine 
+docker-machine stop swarm
+docker ls
+docker-machine create \
+-d digitalocean \
+--digitalocean-access-token=d3eaf52dcef38ef2831fd8d9238d4df8e6723511cc4d261f43960b09c0c378db \
+-- swarm-dicover=token://6ad806f063cd69590debc02dda67d797 \
+swarm-slave-1
+docker-machine create \
+-d digitalocean \
+--digitalocean-access-token=d3eaf52dcef38ef2831fd8d9238d4df8e6723511cc4d261f43960b09c0c378db \
+-- swarm \
+-- swarm-dicover=token://6ad806f063cd69590debc02dda67d797 \
+swarm-slave-1
+docker-machine create \
+-d digitalocean \
+--digitalocean-access-token=d3eaf52dcef38ef2831fd8d9238d4df8e6723511cc4d261f43960b09c0c378db \
+-- swarm-dicover=token://6ad806f063cd69590debc02dda67d797 \
+-- swarm \
+slave-1
+docker-machine create \
+-d digitalocean \
+--digitalocean-access-token=d3eaf52dcef38ef2831fd8d9238d4df8e6723511cc4d261f43960b09c0c378db \
+-- swarm \
+-- swarm-dicover=token://6ad806f063cd69590debc02dda67d797 \
+slave-1
+docker-machine create \
+-d digitalocean \
+--digitalocean-access-token=d3eaf52dcef38ef2831fd8d9238d4df8e6723511cc4d261f43960b09c0c378db \
+-- swarm \
+-- swarm-master \
+-- swarm-dicover=token://6ad806f063cd69590debc02dda67d797 \
+swarm-master
+docker swarm
+docker-machine create \
+-d digitalocean \
+--digitalocean-access-token=520ae6a1d4402b2f77d3c902b8ea13e0 \
+-- swarm \
+-- swarm-master \
+-- swarm-dicover=token://6ad806f063cd69590debc02dda67d797 \
+swarm-master
+swarm create
+docker swarm create
+docker-machine create \
+-d digitalocean \
+-- swarm \
+-- swarm-master \
+-- swarm-dicover=token:// \
+swarm-master
+docker-machine create \
+                    
+docker-machine rm my-first-virtual
+docker-machine create \
+-d virtualbox \
+my-first-virtual
+docker-machine create \
+-d virtualbox
+swarm c
+virtualbox
+sudo apt-get install virtualbox-qt
+git push origin update-dockerfile
+git commit -m 'Update dockerfile and docker-compose.yml
+
+The other one had issues with adding the app in multiple directories, and improperly mounting the shared volumes. This one
+correctly shares the entire nermal_api directory with any docker-compose run or docker-compose up command. I also
+moved the app from /usr to /var/app/www'
+git add Dockerfile 
+cat Dockerfile 
+git stauts
+docker-compose run web /bin/bash
+docker ps -a
+docker rm (docker ps --no-trunc -aq)
+docker ps --no-trunc -aq
+docker rm `docker ps --no-trunc`
+docker rm `docker ps --no-trunc -aq`
+vi Dockerfile 
+docker rmi -f nermalapi_web
+docker rmi nermalapi_web
+docker rmi -f renote/nermal-api
+docker rmi renote/nermal-api
+docker rmi -f nermalserverapp_web
+docker rmi nermalserverapp_web
+docker stop
+dockerps
+docker inspect nermalapi_web_run_26
+docker inspect nermalapi_web_run_25
+docker stop boring_blackwell
+docker run -p 3000 renote/nermal-api
+docker-compose --version
+docker-compose -v
+docker -v
+docker-compose rm
+docker-compose ps
+docker-compose
+docker run -it -p 3000:3000 renote/nermal-api /bin/bash
+docker run -it -p 3000:3000  /bin/bash
+cat here
+docker run -it -p 3000:3000 -v  /home/charlie/code/renote/nermal_api:/var/www renote/nermal-api /bin/bash
+docker run -it -p 3000:3000 -v  .:/var/www renote/nermal-api /bin/bash
+touch here
+rm example 
+touch example
+vi test.sqlite3 
+cat seeds.rb 
+cd migrate/
+vi development.sqlite3 
+docker run -it -p 3000:3000 renote/nermal-api rails console
+docker run -p 3000:3000 renote/nermal-api
+docker run -p renote/nermal-api
+docker run -P renote/nermal-api
+docker run  renote/nermal-api
+docker run -p 3000:3000 renote/nermal-api rails console
+docker run -p 3000:3000 renote/nermal-api rails s
+docker run -p 3000:3000 renote/nermal-api rails c
+docker run rails c
+docker run renote/nermal-api
+docker build -t renote/nermal-api .
+docker inspect jovial_bartik | less
+docker inspect jovial_bartik
+docker run -it  renote/nermal-api /bin/bash
+docker run -it  renote/nermal-api bin/bash
+curl http://localhost:3000
+docker stop cocky_kirch
+curl http://localhost:3001
+curl http://localhost
+curl 127.0.0.1
+docker run -p 3000:3000 -it renote/nermal-api rails s
+docker run -it renote/nermal-api rails s
+docker run -it renote/nermal-api 
+docker run -it renote/nermal-api /bin/bash
+rails images
+docker build . -t renote/nermal-api
+rails s -b
+docker build .
+vi gitbook
+which ruby-install
+ruby-install
+ruby -v
+bundle config
+bundle
+man bundle
+docker build . test
+gem update
+docker run nermalapi_web
+cat dockerfile
+d
+cd docker-swarm/
+cd blog
+docker-compose run web rake db:migrate
+git checkout docker-compose.yml 
+docker-compose run -it web /bin/bash
+docker-compose run web rails c
+docker-compose run web 
+docker-compose run web rails s
+git checkout -b update-dockerfile
+git checkout Gemfile.lock 
+cd nermal_server_app/
+chmod +x docker-machine 
+mv docker-machine_linux-amd64 docker-machine
+wget https://github.com/docker/machine/releases/download/v0.2.0/docker-machine_linux-amd64
+cd bin
+sudo su
+rm docker-machine 
+./docker-machine
+sudo chmod a+x docker-machine 
+sudo sh -c 'curl https://github.com/docker/machine/releases/download/v0.2.0/docker-machine_linux-amd64  >  /bin/docker-machine '
+chmod a+x docker-machine 
+echo $PATH
+cd /bin
+man chmod
+sudo chmod u+x docker-machine 
+chmod u+x docker-machine 
+ls | grep dock
+sudo sh -c ' curl https://github.com/docker/machine/releases/docker-machine_windows-amd64.exe >  /bin/docker-machine '
+sudo curl https://github.com/docker/machine/releases/docker-machine_windows-amd64.exe >  /bin/docker-machine
+sudo curl https://github.com/docker/machine/releases/docker-machine_windows-amd64.exe > sudo /bin/docker-machine
+sudo curl https://github.com/docker/machine/releases/docker-machine_windows-amd64.exe > /bin/docker-machine
+sc
+cd blog/
+godep go install
+cd swarm/
+cd github.com/
+cd src/golang.org/
+cd $GOPATH 
+cd code/blog/
+godep
+vi ~/.config/fish/config.fish 
+cd kr
+cd linux_amd64/
+cd pkg/
+cd pi
+cd $dockerhome
+echo $status 
+go get github.com/tools/godep
+go
+mkdir docker-swarm
+go get
+cd src/
+cd code/go
+go dep 
+git clone https://github.com/docker/swarm
+cd src/github.com/docker/
+mkdir -p $GOPATH/src/github.com/docker/
+cd go
+echo $PATH 
+echo $GOPATH
+mkdir go
+go help gopath
+which go
+CD
+vi config.fish 
+cd fish/
+cd .config/
+sudo apt-get install golang
+sudo apt-get install goloang git
+t update "Tweeting from the cmdline is pretty cool! Thanks https://github.com/sferik/t #CMDLINE"
+t | less
+t matrix
+t mentions
+t accounts
+t 
+t authorize
+c | less
+t
+gem install t
+sudo gem install t
+cd ruby/gems/2.1.0/
+cd ruby-2.1.3/lib/
+cd rubies
+cd /opt
+docker stop loving_fermat
+vi onebox.sh 
+docker run -d -p 49000:49000 -v /home/charlie/code/shippable/mktg -t cadbot/mktg
+${wd}
+wd
+docker run -d -p 49000:49000 -v /home/charlie/code/shippable/mktg:rw -t cadbot/mktg
+cat onebox.sh 
+cd mktg/
+rm -rf code
+mv mktg/ ..
+git clone git@github.com:Shippable/inst.git
+mv mktg code
+mkdir code
+cat run.sh 
+docker stop berserk_wilson
+docker run -d  -p 49000:49000 cadbot/mktg
+docker stop pensive_turing
+vi mktg.app.js 
+vi boot.sh 
+v
+docker run -d cadbot/mktg
+docker build -t cadbot/mktg .
+docker build -t CADBOT/mktg .
+vi run.sh 
+vi README.md 
+git clone https://github.com/Shippable/mktg.git
+cd shippable/
+cd sh
+cat ezio.txt 
+cd book/
+cd writing/
+xdg-open index.html 
+cd public/
+brunch b
+npm install
+vi brunch-config.coffee 
+vi app.js
+vi react.js 
+vi bower.json 
+cd react/
+cd bower_components/
+bower install
+vi bower.json
+cat bower.json | xclip
+bower init
+bower
+npm install -g bower
+cat initialize.coffee 
+cd coffeescripts/
+cat assets/index.html 
+cd app/
+cd stylesheets/
+cs
+cat index.html 
+cd assets/
+vi index.html 
+ls components/
+vi initialize.coffee 
+cat navbar.coffee 
+vi navbar.coffee
+cd components/
+cd initialize.coffee 
+cd app
+vi ezio.txt 
+rm .ezio.txt.swp 
+vi ezio.txt
+cd book
+mkdir book
+mv blogs/ writing/
+mkdir writing
+git merge print-key
+git commit -m 'fixup'
+ssh-agent bash -c "ssh-add /home/charlie/code/blog/engineyard/private_key; ey deploy --api-token=$token"
+ey deploy
+ey login
+cat private_key 
+true --version
+true --versin
+man true
+man rue
+vi /bin/true
+true -v
+which true
+true
+chmod 400 private_key 
+ssh-agent bash -c "ssh-add /home/shippable/.ssh/id_rsa; ey deploy --api-token=$token"
+set token 6ec1a463fbdafdfa8eb5b5f55e57f960
+eTbl2PZNvXGvo04riQPlt+EnIuo/82USJIjGSBrX/hyh8aaG3xzdBxpV2SBALyLJ
+BvYoLYew/WGlC092d9xonAZo6hRkIZ9eYauXu/pUZAZ28TtmCa/dq7HifsVF9G6R
+ffyH1+VP1NCp2BPlIo9wpxDVCMeq0DX5dAGTAwIDAQABAoIBAEZe3681m5B3LT2g
+P1FFTgmVJhL4JQpHl/KTpVmsEjma7bA+ExweJ5BS/72EKyrw1rrAvsyMouYhz02f
+oNOasbAcctotC7rDKwRuNBubojWQYOJAOUQkPkFMdtaPpfBNeINN1t95pzLT2+oQ
+04oa8T/pn9q37QO8Y+CosRgriBwxrdkQMev/+EO6v1apXCmeg67pd121LPWrIChy
+bgkLhXXTURURDn6s8cK5fP+xifqbehZKO3p2Is86htmORaZOuLs4s4pGx2dF7YqO
+MIIEogIBAAKCAQEAoMPzmLVbw+CaZAM3xGFyO9SajMBoaggmgWsrx+UXAjAwbzpB
+-----BEGIN RSA PRIVATE KEY-----
+set token 
+echo $token
+echo $EYRC
+cat $token
+vi private_key
+git commit -m 'cat key'
+git push -u origin print-key
+git checkout -b print-key
+cd code/blog/engineyard/
+git commit -m 'compress into one command'
+cd engineyard/
+cd .ssh
+git commit -m 'add proper key'
+cat ~/.eyrc 
+ey
+ey logout
+git commit -m 'add ssh-agent'
+git commit -m 'add ssh key'
+git commit -m 'add shippable.yml'
+ey deploy --api-token=6ec1a463fbdafdfa8eb5b5f55e57f960
+gem install ey
+vi shippable.yml
+rm 6ec1a463fbdafdfa8eb5b5f55e57f960 
+ssh-add ~/.ssh/id_rsa
+ey environments --api-token=6ec1a463fbdafdfa8eb5b5f55e57f960 
+popd
+ey deploy --api-token=6ec1a463fbdafdfa8eb5b5f55e57f960 environments
+ey deploy --api-token=6ec1a463fbdafdfa8eb5b5f55e57f960 --app=CADBOT/engineyard-sample.git
+ey deploy --api-token=6ec1a463fbdafdfa8eb5b5f55e57f960 --app=git@github.com:CADBOT/engineyard-sample.git
+ey deploy --api-token=6ec1a463fbdafdfa8eb5b5f55e57f960 --app=shippableSample
+ey deploy --api-token=6ec1a463fbdafdfa8eb5b5f55e57f960 --app=enginyardsample
+cat id_rsa.pub 
+cat id_rsa
+pushd ~
+ey deploy --api-token=
+ey environments
+set -x EYRC 6ec1a463fbdafdfa8eb5b5f55e57f960
+cat config/ey.yml 
+git commit -m 'Add generated config/ey.yml from ey init'
+git add config/ey.yml 
+ey init
+git push -u origin master
+git remote add origin https://github.com/CADBOT/engineyard-sample.git
+git commit -m 'initial commit'
+git add .
+git init
+bundle install --without production
+rails new engineyard
+mkdir blog
+git push origin apify-generators
+git commit -m 'Alter rails generators to no longer create front-end stuff'
+git add config/application.rb 
+git checkout -b apify-generators
+git branch -D apify-generators
+rails g scaffold
+bundle exec rails g scaffold charlie
+bundle exec railes g scaffold charlie
+rails g scaffold charlie
+vi application.rb 
+git push origin apify-more
+git commit -m 'Removed vestigal files from ye old monolithic rails app days'
+rake db:seed
+cd integration/
+cd test
+rm sign_in.2 
+rm sign_in.1 
+rm sign_in
+git rm -r public
+cd public
+git rm -r assets
+cd assets
+git checkout -b apify-more
+git push origin content-pipeline
+git log
+git commit
+git add .gitignore 
+git add stylesheets/
+git add coffeescripts/
+ls -a
+git add initialize.coffee 
+git add assets
+git add brunch-config.coffee 
+vi .gitignore
+cat brunch-config.coffee 
+vi app.css
+rm *
+.
+vi main.scss 
+brunch
+b
+mv _bass.scss _base.scss
+cd partials/
+cat main.scss 
+vi _bass.scss
+touch main.scss
+mkdir vendor
+mkdir partials
+mkdir modules
+mv scss stylesheets
+mv coffee/ coffeescripts
+mv stylesheets/ scss
+mv coffeescripts/ coffee
+cd sass-brunch/
+cd node_modules/
+npm install --save sass-brunch
+mv initialize.coffee coffeescripts/
+mkdir stylesheets
+mv javascripts/ coffeescripts
+rm -rf cool
+mv components/ javascripts/
+mkdir javascripts
+cd cool
+rails new cool
+npm install --save brunch
+rm comments.json 
+vi comments.json 
+rm -r tmp/
+mv tmp/app/ .
+rm -rf app
+rm initialize.coffee 
+vi app.js.map 
+cat app.js
+mv initialize.coffee app
+mkdir app
+mv app/ tmp/
+mkdir tmp
+npm install --save coffee-script-brunch
+cat comment-list.coffee 
+rm -rf app2
+mv assets/* ../assets/
+mv views/comment* ../components/
+cd app2
+cd appw
+mv initialize.coffee ..
+rm -rf react-tutorial-brunch-coffee/
+mv app2 ..
+mv app/ app2
+cd react-tutorial-brunch-coffee/
+git clone https://github.com/jacobthemyth/react-tutorial-brunch-coffee.git
+learnyounode print | less
+learnyounode 
+mkdir assets
+vi initialize.coffee
+mv test.coffee components/
+mv other.coffee components/
+mkdir components
+cat other.coffee 
+rm test.js 
+cat test.js 
+vi -p other.coffee test.coffee 
+vi test.coffee 
+cat test.coffee 
+vi other.coffee 
+vi other.coffee
+vi brunch-config.coffee
+rm -rf node_modules/
+ls public
+ls app
+coffee -o public/ -c app/
+ls public/
+coffee -o public
+coffee -c app -o public
+mkdir public
+coffee help
+man coffee
+coffee test.coffee 
+cd apps
+coffee app/test.coffee 
+vi test.coffee
+npm install --save react-coffee-elements
+npm init
+vi example.coffee
+rm -rf one/ two
+cjsx
+cjsx-transform person.coffee 
+npm install -g coffee-react-transform
+vi person.coffee
+cd one
+mkdir two
+mkdir one
+rm -rf views
+git rm -rf views/
+git reset --hard
+rm README.md 
+git checkout js
+rm -rf js/
+git checkout -b content-pipeline
+git add node_modules/
+git add app.jsx 
+git add app.coffee 
+rm -rf nermal_server_app/
+rm -r nermal_server_app/
+cat bower.json 
+cd views
+cat comments.json 
+npm run start
+cat node_modules/
+npm install --save javascript-brunch
+rm package.json 
+vi package.json
+npm
+cd react-coffee
+vi index.html
+mkdir styles
+cd brunch
+mkdir brunch
+vi comment.coffee 
+vi JSXTransformer.js 
+npm install -g brunch
+curl -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: XXXyf_3pX33sYHkyfUyA' -X GET http://localhost:3000/api/v1/schools
+curl -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: XXXyf_3pX33sYHkyfUyA' -X GET http://localhost:3000/api/v1/school
+curl -H 'Content-Type: application/json' -H 'Accept: application/json'  -X POST http://localhost:3000/api/v1/users/sign_in -d '{"user" : { "email" : "shanejgianelli@gmail.com", "password" : "P@ssw0rd"}}'
+cd react-coffee/
+mkdir react-coffee
+vi app/controllers/school_controller.rb 
+vi app/models/school.rb 
+rails c
+set -x renote_token curl -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: FVZ-eWyDy2Mb2p7AcAZB' -X GET http://localhost:3000/api/v1/schools
+charlie [5:10 PM]
+set -x renote_token curl -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: Nif-jNkPB3b2UkpEV59B' -X GET http://localhost:3000/api/v1/schools
+curl -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: Xipcc92sgdju7hTxvRf7' -X GET http://localhost:3000/api/v1/school
+curl -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: Xipcc92sgdju7hTxvRf7' -X GET http://localhost:3000/api/v1/schools 
+curl -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: Xipcc92sgdju7hTxvRf7' -X GET http://localhost:3000/api/v1/schools
+set -x renote_token curl -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: Nif-jNkPB3b2UkpEV59B' -X GET http://localhost:3000/api/v1/scools
+set -x renote_token curl -i -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: Nif-jNkPB3b2UkpEV59B' -X GET http://localhost:3000/api/v1/scools
+set -x renote_token curl -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: Nif-jNkPB3b2UkpEV59B' -X GET http://localhost:3000/api/v1/ksjfalj
+set -x renote_token curl -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: Nif-jNkPB3b2UkpEV59B' -X GET http://localhost:3000/api/v1
+rails c --sandbox
+set -x renote_token curl -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: RchZbch7iYxxwXsMzydB' -X GET http://localhost:3000/api/v1/schools
+curl -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: RchZbch7iYxxwXsMzydB' -X GET http://localhost:3000/api/v1/schools
+curl -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: RchZbch7iYxxwXsMzydB' -X GET http://localhost:3000/api/v1/school
+curl -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: RchZbch7iYxxwXsMzydB' -X GET http://localhost:3000/api/v1/schools/Un
+coffee
+cd react-tutorial/
+vi seeds.rb 
+vi secrets.yml 
+vi config/routes.rb 
+cat config/routes.rb 
+vi user.rb 
+cd  models/
+vi school_controller.rb 
+cd controllers/
+wget curl -H 'Content-Type: application/json' -H 'Accept: application/json'  -X POST http://localhost:3000/api/v1/users/sign_in -d '{"user" : { "email" : "shanejgianelli@gmail.com", "password" : "P@ssw0rd"}}'
+bundle exec rake db:seed
+bundle exed rake db:seed
+bundle exec rake db:migrate
+bundle exed rake db:migrate
+curl -H 'Content-Type: application/json' -H 'Accept: application/json'  -X POST http://localhost:3000/api/v1/users/sign_in -d '{"user" : { "email" : "shanejgianelli@gmail.com", "password" : "P@ssw0rd"}}' | less
+curl -H 'Content-Type: application/json' -H 'Accept: application/json' -v -X POST http://localhost:3000/api/v1/users/sign_in -d '{"user" : { "email" : "shanejgianelli@gmail.com", "password" : "P@ssw0rd"}}'
+vi test_helper.rb 
+vi college_class_controller_test.rb 
+vi college_class_test.rb 
+cd models/
+vi note_category_controller.rb 
+vi users_controller.rb 
+vi students_controller.rb 
+vi development.rb 
+cd environments/
+vi routes.rb 
+cd config
+vi users
+vi application_controller.rb 
+vi student.rb 
+cat user.rb 
+cat student.rb 
+vi Rakefile 
+vi students.coffee 
+cd javascripts/
+cd images/
+vi note_category_helper.rb 
+vi college_class_helper.rb 
+cd helpers/
+git checkout Gemfile
+cd cf-frontend/
+cd js
+rm application.html 
+vi application.html
+mkdir views
+cd liz_ui
+scd
+S
+ruby server.rb 
+vi example.js 
+cd scripts/
+vi public/scripts/example.js 
+mv tutorial2.js example.js
+cp ../../../scripts/components/tutorial2.js .
+rm example.js 
+vi base.css 
+cd css
+ruby server.
+git checkout server.rb
+vi server.rb 
+mv server.rb ..
+git clone https://github.com/reactjs/react-tutorial.git
+vi scripts/components/tutorial2.js 
+vi data.json
+jsx scripts/components built
+ls scripts/components/
+ls scripts/
+s..
+vi -p test.js tutorial2.js 
+vi test.js
+rm tutorial.js 
+cat tutorial.js 
+cat tutorial
+rm scripts/components/.tutorial2.js.swp 
+x
+vi app.jsx
+vi app.coffee 
+npm install -g coffee-react
+npm install --save coffee-react
+vi app.coffee
+npm install --save coffee-script
+npm install --save coffeescript
+npm install --save react
+npm install react
+npm install -g browserify
+mkdir js
+git checkout -b initial-structure
+git clone https://github.com/CADBOT/liz_ui.git
+git clone https://github.com/sjdev/nermal_ui.git
+rm -rf liz_ui/
+cd tutorials/react-tutorial/
+mkdir renote
+cd react
+vi tests/sample_test.js 
+rm -rf sample_node_selenium/
+cc
+git commit -m 'make a change'
+git add server.js 
+vi server.js 
+cd sample_node_selenium/
+git clone https://github.com/CADBOT/sample_node_selenium
+cd show
+mkdir show
+cd demo
+mkdir demo
+j
+vi scripts/components/tutorial.js 
+vi tutorial2.js 
+cat tutorial.js >> tutorial2.js 
+cat tutorial2.js 
+vi tutorial
+vi tutorial.js 
+vi tutorial2.js
+ls scripts/components/tutorial.js 
+cd built
+mkdir built
+vi commentList.js
+mv commentBox.js tutorial.js
+mv tutorial.js commentBox.js
+vi tutorial.js
+xclip -o > index.html
+xclip -o 
+mkdir scripts
+rm -r scrpits/
+mkdir scrpits
+mkdir react-tutorial
+rm -rf react-0.13.1/
+jsx --watch src build
+npm install -g react
+vi people.js 
+vi helloworld.js 
+cd build
+cd buli
+xdg-open helloworld.html 
+vi -p people.js helloworld.js 
+vi helloworld.html 
+vi src/helloworld.js 
+sudo npm install -g react-tools
+jsx --watch
+jsx help
+jsx --watch src/ build/
+vi react.min.js 
+jsx
+npm install -g react-tools
+rm .helloworld.html.swp 
+cd react-0.13.1/
+sudo docker-compose up
+sudo docker-compose run web rails s
+sudo docker-compose run web rails console
+sudo docker-compose run web rails -c
+docker-compose run web rails -c
+sudo docker-compose run 
+sudo docker-compose run rails
+sudo docker-compose 
+sudo docker-compose run rails c
+sudo docker
+docker-compose 
+sudo chmod +x /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.1.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+curl -L https://github.com/docker/compose/releases/download/1.1.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+wget -qO- https://get.docker.com/ | sh
+cat helloworld.html 
+git push origin my-feature
+git commit -m 'make another changeeee'
+git checkout -b my-feature
+git commit -m 'make another change'
+cd demo/
+vi helloworld.js
+mkdir src
+vi helloworld.html
+vi selenium.sh 
+less README.md 
+rm react-0.13.1.zip 
+unzip react-0.13.1.zip 
+wget http://facebook.github.io/react/downloads/react-0.13.1.zip
+wget (xclip -o)
+xclip -o | wget
+man wget
+man xclip
+sudo apt-get install xpaste
+sudo apt-get install xclip
+mv nodeschool/ tutorials/
+mkdir tutorials
+cd renote-frontend/
+git checkout -b directory-structure
+mkdir renote-frontend
+git push origin nermal
+git commit -m 'add meaning to app'
+git add README.md 
+git checkout -b nermal
+git reset
+rm -rf components/
+vi classes_list.js.jsx
+rm component.js 
+vi component.js 
+vi college_class.coffee 
+git commit -m 'goodbye world'
+vi shippable.demo
+vi classes_list.js.coffee
+a
+mv component.coffee component.js
+vi component.coffee
+cat application.js 
+cd app/assets/
+vi production.rb 
+vi app/assets/javascripts/application.js 
+git checkout -b react-setup
+git branch -D front-end
+git branch -r
+man git-branch
+cat server.js 
+node ./server.js 
+git clone https://github.com/shippableSamples/sample_node_selenium
+git branch -d prod
+git merge prod
+git push origin prod
+git commit -m 'switch to using prod. Rotation apikey'
+git checkout -b prod
+cd kicker
+git config --global credential.helper 'cache --timeout=3600'
+git config --global credential.helper cache
+git clone https://github.com/CADBOT/kicker.git
+git clone https://github.com/Shippable/pm/wiki/Running-a-Demo#parallel-builds
+vi application.html.erb 
+cd layouts/
+cd app/views/
+cat index.html.erb 
+cd review/
+cd school/
+cd college_class/
+vi index.html.erb 
+bundle exexrake db:migrate
+man rails
+rails help
+rails
+cd f2-hw2/
+cd class3
+cd class
+f
+python manage.py 
+cd django_sample/
+vi shippable-demo-script.txt
+xdg-open ~/lib/node_modules/learnyounode/node_apidoc/fs.html 
+cd myfirstasyncio/
+mkdir myfirstasyncio
+learnyounode verify program.js 
+lF
+node program.js txt
+vi txt 
+cat txt 
+learnyounode print
+echo 'example' > txt
+node program.js 2 
+vi program.js
+cd myfirstio/
+mv myfirsti/ myfirstio
+mkdir myfirsti
+cd learnyounode/
+cd nodeschool/
+cd node
+cd class2
+cd django
+vi .gitmodules 
+cd inner/
+cd vendor/
+cd outer/
+git clone https://github.com/CADBOT/outer.git
+vi manage.py 
+django-admin startproject django_sample
+django-admin startproject django-sample
+sudo pip install virtualenvwrapper
+pip install coverage
+cat requirements_tests.pip 
+cat requirements.pip 
+cd django-sample-app/
+git clone https://github.com/CADBOT/django-sample-app.git
+rm -rf django-sample-app/
+git clone https://github.com/kirpit/django-sample-app.git
+sudo pip install django
+rm -rf django-sample/
+deactivate
+cd mysite/
+git add mysite/
+rm -rf .git
+django-admin startproject mysite
+python
+pip install django
+which python
+which pip
+source env/bin/activate.fish 
+virtualenv env
+rm -rf env/
+cd code/django-sample/
+source activate.fish 
+cd env/
+sudo pip install virtualenv
+pip install virtualenv
+cd django-sample/
+mkdir django-sample
+bundle exec rake test
+cat Rakefile 
+ey envey environments
+git commit -m "Add generated config/ey.yml from ey init"
+cd sample-rubyonrails-postgres-heroku/
+git clone https://github.com/CADBOT/sample-rubyonrails-postgres-heroku.git
+cd ey
+mkdir ey
+set -x ENGINEYARD_API_TOKEN 6ec1a463fbdafdfa8eb5b5f55e57f960
+cat .eyrc 
+mv ~/.eyrc .
+ey ogin
+ey whoami
+vi config/ey.yml 
+git commit -m 'add generated config/ey.yml from ey init'
+cd sample-ruby-robocop/
+git clone git@github.com:CADBOT/sample-ruby-robocop.git
+cd code/sample-rubyonrails-postgres-heroku/
+cd //
+gem install engineyard
+git commit -m 'change test'
+git add hello_controller_test.rb 
+vi hello_controller_test.rb 
+vi ../app/views/hello/index.html.erb 
+cd test/
+cd tests
+git commit -m 'change something'
+cd hello/
+git checkout -b front-end
+bundle exec rake rubocop
+rake rubocop
+git commit -m 'update to my app and key'
+heroku run rake db:migrate
+git push heroku master
+heroku apps:create shippable-test
+heroku apps:create shippable
+heroku login
+rake db:create:all
+sudo su postgres -c psql
+sudo apt-get install libpq-dev
+sudo apt-get install postgresql
+git clone git@github.com:CADBOT/sample-rubyonrails-postgres-heroku.git
+rm -rf sample-rubyonrails-postgres-heroku/
+heroku keys
+heroku apps:info --app cadbot-portfolio 
+heroku apps info --app cadbot-portfolio 
+heroku apps info cadbot-portfolio 
+heroku apps cadbot-portfolio info
+heroku app cadbot-portfolio info
+heroku info
+heroku urls
+heroku apps
+heroku
+vi config.ru 
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+git commit -m 'update demo script'
+git add shippable-demo-script.txt
+aspell -c shippable-demo-script.txt 
+aspell
+aspell shippable-demo-script.txt 
+sudo apt-get install aspell
+cd code/demo/
+git remote add origin git@github.com:CADBOT/shippable-demo.git
+git commit -m 'add demo script'
+git add *
+cp shippable-demo-script.txt ~/code/demo/
+gem install rails
+mkdir demo-script
+cd Do
+cd rails-demo/
+bundle exec rake
+sudo apt-get install libsqlite3-dev
+apt-get install libsqlite3-dev
+gem install activejob 
+gem install bundler
+which gem
+which ruby
+gem
+chruby
+bundle install --path vendor/bundle
+gem install json -v '1.8.2'
+sudo gem install rails
+git clone git@github.com:sjdev/nermal_server_app.git
+mkdir rails-demo
+cat index.erb 
+bundle exec rackup -p 9292 config.ru 
+sudo gem install bundler
+git add config.ru demo.rb Gemfile views/
+cat config.ru 
+vi config.ru
+cd semantic-html5-rebuild/
+vi demo.rb 
+cd code/demo
+git commit -m 'Add basic styling'
+git add css
+git add index.html 
+cd submods/
+cd blogs
+git clone "https://$key"
+git clone https://$key
+git clone https://b4fe02cc72c207ca3e0a3dc7e8fb810033f6ea01@github.com/CADBOT/inner.git
+echo $key
+echo $inner
+set inner https://github.com/CADBOT/inner.git
+cat .gitmodules 
+cd outer
+cd blogs/
+grep +A https .gitmodules 
+grep https .gitmodules 
+grep url .gitmodules 
+grep .gitmodules url
+ls .gitmodules 
+set token b4fe02cc72c207ca3e0a3dc7e8fb810033f6ea01
+rm -rf inner
+git clone https://b4fe02cc72c207ca3e0a3dc7e8fb810033f6ea01@github.com/CADBOT.inner.git
+man git-submodule-update
+man git-submodule
+git submodule update
+ls 0a
+git submodule init
+cd inner
+cd out
+vi blog.txt
+git clone git@github.com:CADBOT/inner.git
+git clone git@github.com:CADBOT/outer.git
+mkdir submods
+mkdir blogs
+w
+ruby demo.rb 
+mv index.html index.erb
+mv index.erb index.html
+vi index.erb
+vi demo.rb
+sinatra
+sudo gem install sinatra
+gem install sinatra
+ssh -T -ai key git@github.com
+vi key
+cd key
+mkdir key
+ssh charlie@104.236.56.28
+sudo apt-get install irssi
+vi
+vim --version | less
+gvim x.rb
+gvim
+which vim
+update-alternatives
+sudo apt-get install vim-gnome
+apt-cache search vim
+apt-cache search vi
+vi /usr/bin/vim
+vim --version | grep clientserver
+vim --version
+systemctl
+systemd
+xflux -z 98040
+cd code/cf-frontend/
+mv normalize.css  ~/code/cf-frontend/class3/f2-hw2/css/normalize.css
+vi normalize.css 
+cd normalize.css/
+npm install normalize.css
+cd normal/
+mkdir normal
+xdg-open list-bg.png 
+cd img
+g
+cd img/
+vi css/application.css 
+vi apple-touch-icon.png 
+vi application.css
+vi main.css 
+git clone git@github.com:CADBOT/f2-hw2.git
+mkdir class3
+node program.js 2 34 5
+learnyounode current
+node
+cd baby-steps/
+mkdir baby-steps
+learnyounode
+mv program.js  helloworld/
+mkdir helloworld
+node program.js 
+vi program.js 
+echo 'console.log('HELLO WORLD')' > program.js
+mkdir learnyounode
+mkdir nodeschool
+learnyounde
+npm install -g coffee-script
+npm install -g coffeescript
+npm install -g learnyounode
+which npm
+ln -s /opt/node-v0.12.2-linux-x64/bin/npm ~/bin/npm
+ln -s /opt/node-v0.12.2-linux-x64/bin/node ~/bin/node
+cd node-v0.12.2-linux-x64/
+sudo mv node-v0.12.2-linux-x64 /opt
+mv node-v0.12.2-linux-x64 /opt
+cd /usr/bin
+tar xvzf node-v0.12.2-linux-x64.tar.gz 
+wget http://nodejs.org/dist/v0.12.2/node-v0.12.2-linux-x64.tar.gz
+mv main.cssbk main.css
+mv main.css main.cssbk
+git checkout -b css
+git branch -D html
+git branch -d html
+git checkout html
+git diff master..html
+sudo nmap -sP 192.168.0.1-254
+nmap -sP 192.168.0.1
+nmap 192.168.0.1
+nmap localhost
+javac
+sudo apt-get install default-jdk
+git commit -m 'compress social media into one list'
+rm index.html 
+cd code/cf-frontend/class2/
+git branch -d class2
+git branch -d semantic-html
+git branch -d implement-advice
+git merge implement-advice
+git commit -m 'make the alt tags better'
+git commit -m 'Move author to being a section of the article, as it is critical content, and not an aside'
+git commit -m 'Actually update "best food on the web" to be a subheader instead of a paragraph'
+git commit -m 'delete nav for social media, as the links are not for internal nav'
+git commit -m 'update "best food on the web" to be a subheader instead of a paragraph'
+git checkout -b implement-advice
+cd class2/
+sudo restart now
+shutdown now
+shutdown
+aws ecs help
+aws ecs
+aws ecs list-task-definitions
+aws ecs describe-container-instances 
+aws ecs list-container-instances 
+aws ecs describe-clusters
+aws ecs list-container-instances --cluster default
+aws ecs create-cluster
+aws ec2 describe-instances | less
+aws ec2 describe-instances
+aws ec2 help
+aws ec2
+aws configure
+aws
+sudo pip install awscli
+pip install awscli
+sudo easy_install pip
+easy_install pip
+sudo apt-get install python-setuptools
+easy_install
+pip
+git push origin class2
+git commit -m 'create html'
+cp ../index.html .
+git checkout class2
+cp index.html ..
+git checkout semantic-html 
+git checkout -b class2
+git push origin html
+git push origin :html
+git push origin semantic-html
+git branch master
+git checkout -b html
+git merge semantic-html 
+git commit -m 'commit boilerplate code other than index'
+git rm --cached index.html 
+man git-rm
+git checkout semantic-html
+git
+git branch -D semantic-html
+git commit -m 'add semantic html5 and html boilerplate'
+git rm -f .index.html.swp 
+git rm .index.html.swp 
+git add -A
+man git-add
+git add -a
+git add 404.html apple-touch-icon.png browserconfig.xml crossdomain.xml css/ doc/ favicon.ico humans.txt  index.html  js/ robots.txt tile tile-wide.png 
+git checkout -b semantic-html
+git commit -m 'include images dir'
+git add img/
+git remote add origin git@github.com:CADBOT/f2-hw2.git
+git remote add git@github.com:CADBOT/f2-hw2.git
+git push origin :master
+git push origin :semantic-html
+git remote -v
+git clone git@github.com:AyenCamus/f2-hw2.git
+cd ayen/
+mkdir ayen
+git remote
+git push origin show-ayen
+git commit -m 'showing ayen git!'
+git add ayen.txt 
+touch ayen.txt
+git checkout -b show-ayen
+git merge semantic-html
+git clone git@github.com:reactjs/react-tutorial.git
+cd examples/
+mkdir examples
+cd charlie-crawford/
+cd cf-frontend/semantic-html5-rebuild/
+sudo service xboxdrv restart
+sudo xboxdrv
+xboxdrv 
+sudo apt-get install ubuntu-xboxdrv
+sudo apt-add-repository ppa:rael-gc/ubuntu-xboxdrv
+vi sfs
+vi stt
+vi stuff
+vim
+vi .vimrc 
+git commit -m 'Finish semantic html'
+git add img
+cat logo.png 
+sudo apt-get install shutter
+lpinfo -v
+sudo /usr/lib/cups/backend/dnssd  | less
+sudo /usr/lib/cups/backend/dnssd 
+/usr/lib/cups/backend/snmp 
+nmap 192.168.1.150
+man nmap
+sudo apt-get install nmap
+ping 192.168.1.150
+sudo /etc/init.d/cups restart
+sudo apt-get install iscan
+sudo apt-get install cups
+vi colors.txt
+inkscape renote-logo.svg 
+git checkout b127
+git commit -m 'add box around note'
+git add renote-logo.svg 
+git commit -m 'initial commit. Spacing above re is too high, but the spacing on the bottom is good'
+cd renote/
+mv renote-logo.svg  renote/
+cd Pictures/
+mv OpenSans-ExtraBold.ttf ~/.fonts/
+rm typesetit_great-vibes.zip 
+rm Open_Sans.zip 
+rm LICENSE.txt 
+unzip Open_Sans.zip 
+cd fonts/
+mv Open_Sans.zip fonts/
+rm Open_Sans.zip.part 
+unzip Open_Sans.zip.part 
+rm OFL.txt 
+mv Open_Sans.zip.part fonts/
+cd Downloads/
+rm -f ~/*fonts.cache-1
+rm -f /usr/share/fonts/*fonts.cache-1
+cd .fonts/
+mv Downloads/fonts/GreatVibes-Regular.ttf .fonts/
+mkdir .fonts
+cd truetype/
+cd fonts
+cd font
+cd /usr/share/
+cd .fonts
+vi GreatVibes-Regular.ttf 
+vi OFL.txt 
+unzip typesetit_great-vibes.zip 
+mv typesetit_great-vibes.zip fonts/
+mkdir fonts
+rm GreatVibes-Regular.ttf 
+xflux
+flux
+man python
+ack
+crontab -e
+crontab -l
+crontab
+git commit -m 'initial commit. first draft of html made using html5-boilerplate'
+git add html5-boilerplate/
+git add app
+git add init
+vi 404.html 
+xdg-open apple-touch-icon.png 
+rm -r src/
+cat .gitattributes 
+cat .gitignore 
+cat .git
+cat .editorconfig 
+mv src/* .
+cp -R ../html5-boilerplate/src/ .
+cp -R ../html5-boilerplate/src .
+cp -r ../html5-boilerplate/src/ .
+cp -r ../html5-boilerplate/src/
+cd st
+git checkout 5.1.0
+git tag
+git -v branch
+vi gulpfile.js 
+cd html5-boilerplate/
+git clone https://github.com/h5bp/html5-boilerplate.git
+mv classw/ class2
+mkdir classw
+which python3
+python3
+pyhton3
+python -v
+cd docs
+git clone git@github.com:Shippable/docs.git
+cd dockerbuild-post-ci/
+ssh root@104.236.191.150
+brew
+bash
+mv shippable.html index.html
+cd code/cf-frontend/semantic-html5-rebuild/
+open
+xdg-open shippable.html 
+vi shippable.html 
+sf
+xdg-open shippable.html &
+man xdg-open
+xdg-open
+man open
+sudo apt-get install inkscape
+rm dedicated\ machines.png 
+wget http://www.shippable.com/images/dedicated%20machines.png
+cat .ssh/id_rsa.pub 
+cd code/shippable/
+mv record_time.png record-time.png
+mv dedicated\ machines.png dedicates-machines.png
+wget http://www.shippable.com/images/record_time.png
+cd images
+cd .vim
+vi shippable.html
+ssh charlie@root@104.236.56.28
+cp -r  ../dockerbuild-post-ci
+cd tes
+mkdir test
+man cp
+ma ncp
+git commit -am 'view output dir'
+git commit -am 'view shippable folder'
+git config --global push.default simple
+git commit -m 'view dir'
+git push -u origin test
+git checkout -b test
+git clone git@github.com:CADBOT/dockerbuild-post-ci.git
+rm -rf docker-build-nodejs/
+rm -rf dockerbuild-post-ci/
+ssh -T git@github.com
+ssh-keygen -t rsa -C 'charliec364@gmail.com'
+ssh
+git commit -m 'update install'
+git config --global user.name CADBOT
+git config --global user.email 'charliec364@gmail.com'
+rm shippable.html 
+rm shippable.yml 
+mv README.md ..
+mv package.json ..
+mv index.js ..
+mv Dockerfile ..
+cd docker-build-nodejs/
+cp -R ../docker-build-nodejs .
+cp -R ../docker-build-nodejs
+cp -R ../docker-build-nodejs/*
+git clone https://github.com/shippableSamples/docker-build-nodejs.git
+git clone https://github.com/CADBOT/dockerbuild-post-ci.git
+mkdir shippable
+rm .shippable.html.swp 
+wget https://github.com/abbradar/fprint_vfs5011/tree/faa090818200ca3ea6bfac8bb510e5e01a246c34
+rm faa090818200ca3ea6bfac8bb510e5e01a246c34 
+sudo apt-get install libtool fprintd automake
+sudo apt-get install libxv-dev
+sudo apt-get install libmagickcore-dev
+man lsusb
+lsusb
+lsubb
+ls images/
+cat images/shippable-logo.png 
+ls shippable.html 
+convert shippable-logo.png -resize 400x300 shippable-logo.png 
+cat shippable-logo.png 
+sudo apt-get install imagemagick
+mv shippable\ logo\ white.png shippable-logo.png
+wget http://www.shippable.com/images/logos/shippable%20logo%20white.png
+wget 
+mkdir images
+cd bundle/
+cd .vim/
+vi severeRebuild.html 
+vi outlineRebuild.txt 
+vi README.txt 
+cd ../leah-severe/
+vi semanticrebuild.html 
+cd evan-wilkinson/
+vi moneymustache.html
+cat semanticrebuild.html 
+sudo apt-get install skype
+sudo apt-get install scudcloud
+sudo apt-add-repository --remove ppa:kilian/f.lux
+strings xflux 
+vi xflux 
+sudo apt-add-repository -y ppa:rael-gc/scudcloud
+ps -a
+mv xflux ~/bin
+cd xfluc
+tar -xvzf xflux64.tgz 
+wget https://justgetflux.com/linux/xflux64.tgz
+sudo apt-get install fluxgui
+sudo add-apt-repository ppa:kilian/f.lux
+sudo apt-get install steam
+mkdir charlie-crawford
+git clone https://github.com/CADBOT/semantic-html5-rebuild.git
+mkdir cf-frontend
+mkdir bin
+unity-tweak-tool 
+sudo apt-get install unity-tweak-tool
+sudo dpkg --configure -a
+biash
+ruby -e "(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
+sudo apt-get install -f
+rm -rf my-machine-image/
+vi something.rb
+./install.sh --clang-completer
+cd ~/.vim/bundle/YouCompleteMe/
+cat setup.sh 
+cd my-machine-image/
+sudo chown -R charlie:charlie home/
+chown -R charlie:charlie home/
+ls -al
+vim +PluginInstall +qall
+sudo chown -R charlie:charlie .vim
+chown charlie:charlie .vim
+vi stomething.rb
+rm -r nautilis/
+mkdir nautilis
+sudo chown charlie:charlie .config/
+chown charlie:charlie .config/
+ls -la
+chsh
+fish
+sudo ./setup.sh 
+git clone https://github.com/CADBOT/my-machine-image.git
+sudo apt-get install git
